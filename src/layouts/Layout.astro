@@ -224,6 +224,14 @@ const {
       [data-theme="light"] .icon-sun { display: block; }
       [data-theme="light"] .icon-moon { display: none; }
 
+      /* ── THEME-AWARE LOGOS ─────────────────────────────── */
+      /* Dark theme: show dark logo, hide light logo */
+      [data-theme="dark"]  .logo-dark  { display: block; }
+      [data-theme="dark"]  .logo-light { display: none; }
+      /* Light theme: show light logo, hide dark logo */
+      [data-theme="light"] .logo-light { display: block; }
+      [data-theme="light"] .logo-dark  { display: none; }
+
       /* ── SCROLLBAR ─────────────────────────────────────── */
       ::-webkit-scrollbar { width: 6px; }
       ::-webkit-scrollbar-track { background: var(--bg); }
