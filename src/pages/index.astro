@@ -21,7 +21,7 @@ import Layout from '../layouts/Layout.astro';
       <a href="#resources">Resources</a>
     </div>
     <div class="nav-actions">
-      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" style="display:none">
         <span class="icon-sun">☀️</span>
         <span class="icon-moon">🌙</span>
       </button>
@@ -860,7 +860,7 @@ import Layout from '../layouts/Layout.astro';
   }
   .about-card:hover { transform: translateX(6px); }
   .about-card--1 { border-left: 3px solid var(--electric-blue); }
-  .about-card--2 { border-left: 3px solid var(--deep-teal); margin-left: 1.5rem; }
+  .about-card--2 { border-left: 3px solid var(--deep-teal); }
   .about-card--3 { border-left: 3px solid var(--amber); }
   .about-card-icon { font-size: 1.6rem; margin-bottom: 0.5rem; }
   .about-card h4 { font-family: 'Syne', sans-serif; font-size: 1rem; margin-bottom: 0.4rem; }
