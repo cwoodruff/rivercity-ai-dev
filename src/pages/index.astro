@@ -1,0 +1,1315 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+
+<!-- ═══════════════════════════════════════════════
+     NAV
+════════════════════════════════════════════════ -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="#hero" class="nav-logo">
+      <img src="/logo.png" alt="River City AI & Dev User Group" />
+    </a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#topics">Topics</a>
+      <a href="#events">Events</a>
+      <a href="#community">Community</a>
+      <a href="#resources">Resources</a>
+    </div>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <span class="icon-sun">☀️</span>
+        <span class="icon-moon">🌙</span>
+      </button>
+      <a href="#newsletter" class="btn btn-primary nav-cta">Join the Group</a>
+    </div>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <!-- Mobile menu -->
+  <div class="nav-mobile" id="mobile-menu">
+    <a href="#about">About</a>
+    <a href="#topics">Topics</a>
+    <a href="#events">Events</a>
+    <a href="#community">Community</a>
+    <a href="#resources">Resources</a>
+    <a href="#newsletter" class="btn btn-primary" style="margin-top:0.5rem;">Join the Group</a>
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <!-- Animated grid background -->
+  <div class="hero-grid" aria-hidden="true"></div>
+  <!-- Gradient orbs -->
+  <div class="orb orb-blue" aria-hidden="true"></div>
+  <div class="orb orb-teal" aria-hidden="true"></div>
+  <div class="orb orb-amber" aria-hidden="true"></div>
+
+  <div class="container hero-content">
+    <div class="hero-badge reveal">
+      <span class="badge-dot"></span>
+      Grand Rapids, Michigan
+    </div>
+
+    <div class="hero-logo reveal" style="transition-delay:0.1s">
+      <img src="/logo.png" alt="River City AI & Dev User Group Logo" />
+    </div>
+
+    <h1 class="hero-title reveal" style="transition-delay:0.2s">
+      Where <span class="gradient-text">Grand Rapids</span><br />
+      Developers <span class="accent-text">Build Together</span>
+    </h1>
+
+    <p class="hero-sub reveal" style="transition-delay:0.3s">
+      A community for AI engineers, web and mobile developers, Rustaceans, .NET devs,
+      and open-source contributors — every skill level, every stack. Monthly meetups,
+      real talks, real people.
+    </p>
+
+    <div class="hero-actions reveal" style="transition-delay:0.4s">
+      <a href="#newsletter" class="btn btn-primary">
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        Join the Group
+      </a>
+      <a href="#events" class="btn btn-secondary">
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Upcoming Events
+      </a>
+    </div>
+
+    <div class="hero-stats reveal" style="transition-delay:0.5s">
+      <div class="stat">
+        <span class="stat-num">200<span class="stat-plus">+</span></span>
+        <span class="stat-label">Members</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">Monthly</span>
+        <span class="stat-label">Meetups</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">Free</span>
+        <span class="stat-label">Always</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll-hint" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     ABOUT
+════════════════════════════════════════════════ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <span class="section-label reveal">About Us</span>
+        <h2 class="section-title reveal" style="transition-delay:0.1s">
+          Built by devs,<br />for devs.
+        </h2>
+        <p class="section-subtitle reveal" style="transition-delay:0.15s">
+          River City AI & Dev User Group is Grand Rapids' home for curious, hands-on technologists. 
+          Whether you're shipping your first app or your tenth production AI system — 
+          you belong here.
+        </p>
+        <ul class="about-list reveal" style="transition-delay:0.2s">
+          <li>
+            <span class="about-icon">🤝</span>
+            <div>
+              <strong>Inclusive by design</strong>
+              <p>Beginners, seniors, career changers — all welcome. No gatekeeping, ever.</p>
+            </div>
+          </li>
+          <li>
+            <span class="about-icon">⚡</span>
+            <div>
+              <strong>Practical & forward-looking</strong>
+              <p>Real demos, live coding, honest takes on AI tools and dev trends.</p>
+            </div>
+          </li>
+          <li>
+            <span class="about-icon">🌊</span>
+            <div>
+              <strong>Rooted in Grand Rapids</strong>
+              <p>Local talent, local companies, local opportunities. West Michigan's tech scene is thriving.</p>
+            </div>
+          </li>
+        </ul>
+        <div class="reveal" style="transition-delay:0.25s">
+          <a href="#newsletter" class="btn btn-accent" style="margin-top:1.5rem;">Get Involved →</a>
+        </div>
+      </div>
+      <div class="about-visual reveal" style="transition-delay:0.15s">
+        <div class="about-card-stack">
+          <div class="about-card about-card--1">
+            <div class="about-card-icon">🧠</div>
+            <h4>AI & Machine Learning</h4>
+            <p>LLMs, agents, fine-tuning, RAG pipelines, and responsible AI deployment.</p>
+          </div>
+          <div class="about-card about-card--2">
+            <div class="about-card-icon">🛠️</div>
+            <h4>Hands-On Demos</h4>
+            <p>Every meetup features live coding, tool walkthroughs, and Q&amp;A sessions.</p>
+          </div>
+          <div class="about-card about-card--3">
+            <div class="about-card-icon">🌐</div>
+            <h4>Cross-Stack Community</h4>
+            <p>Web, mobile, systems, cloud — we talk it all without the tribal nonsense.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     TOPICS
+════════════════════════════════════════════════ -->
+<section class="section section--alt" id="topics">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">What We Cover</span>
+      <h2 class="section-title">Every stack,<br />every discipline.</h2>
+      <p class="section-subtitle">
+        Our talks and workshops span the full spectrum of modern software development 
+        — you don't have to be an "AI person" to fit in.
+      </p>
+    </div>
+
+    <div class="topics-grid">
+      {[
+        { icon: '🤖', title: 'AI & LLMs', desc: 'ChatGPT, Claude, Gemini, local models, prompt engineering, agents, RAG, and AI-native app development.', color: 'blue' },
+        { icon: '🕸️', title: 'Web Development', desc: 'React, Astro, Next.js, SvelteKit, Tailwind, edge functions, and the ever-evolving frontend landscape.', color: 'teal' },
+        { icon: '📱', title: 'Mobile Dev', desc: 'Swift, Kotlin, Flutter, React Native, Expo — cross-platform strategies and native best practices.', color: 'amber' },
+        { icon: '🦀', title: 'Rust', desc: 'Systems programming, WebAssembly, async Rust, Axum, memory safety, and the joys of the borrow checker.', color: 'orange' },
+        { icon: '🔷', title: '.NET & C#', desc: 'ASP.NET Core, Blazor, MAUI, Minimal APIs, EF Core, and Microsoft Azure integrations.', color: 'blue' },
+        { icon: '🌍', title: 'Open Source', desc: "Contributing to OSS, running your own projects, licenses, community governance, and why it matters.", color: 'teal' },
+        { icon: '☁️', title: 'Cloud & DevOps', desc: 'Kubernetes, Docker, CI/CD, AWS, Azure, GCP, infrastructure as code, and platform engineering.', color: 'amber' },
+        { icon: '🔐', title: 'Security & Privacy', desc: 'AppSec, threat modeling, OAuth, zero-trust architectures, and keeping user data safe.', color: 'orange' },
+        { icon: '📊', title: 'Data Engineering', desc: 'Pipelines, vector databases, analytics, dbt, DuckDB, and making sense of big datasets.', color: 'blue' },
+      ].map((t, i) => (
+        <div class={`topic-card topic-card--${t.color} reveal`} style={`transition-delay:${i * 0.06}s`}>
+          <span class="topic-icon">{t.icon}</span>
+          <h3>{t.title}</h3>
+          <p>{t.desc}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     EVENTS
+════════════════════════════════════════════════ -->
+<section class="section" id="events">
+  <div class="container">
+    <div class="events-header">
+      <div class="reveal">
+        <span class="section-label">Events</span>
+        <h2 class="section-title">Mark your calendar.</h2>
+        <p class="section-subtitle">Monthly meetups, workshops, and special events throughout West Michigan.</p>
+      </div>
+      <a href="https://www.meetup.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary reveal" style="align-self:flex-end">
+        All Events on Meetup →
+      </a>
+    </div>
+
+    <div class="events-grid">
+      <!-- Featured event -->
+      <div class="event-card event-card--featured reveal">
+        <div class="event-badge">Next Up</div>
+        <div class="event-date">
+          <span class="event-month">APR</span>
+          <span class="event-day">15</span>
+        </div>
+        <div class="event-info">
+          <h3>Building Agentic AI Apps with Claude & LangGraph</h3>
+          <p>Dive deep into multi-step AI agents. We'll build a real-world workflow automation tool live, then open the floor for discussion on where agents actually work — and where they fall flat.</p>
+          <div class="event-meta">
+            <span>📍 Grand Rapids, MI (TBA)</span>
+            <span>🕕 6:00 PM – 8:30 PM</span>
+            <span>🆓 Free to attend</span>
+          </div>
+          <a href="https://www.meetup.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="margin-top:1.25rem;">RSVP on Meetup</a>
+        </div>
+      </div>
+
+      <!-- Past / upcoming -->
+      <div class="event-side">
+        {[
+          { month: 'MAR', day: '18', title: 'Rust for AI: Candle & Burn Frameworks', type: 'Past', note: 'Slides available' },
+          { month: 'FEB', day: '20', title: 'Full-Stack AI with Next.js 14 & Vercel AI SDK', type: 'Past', note: '48 attendees' },
+          { month: 'MAY', day: '20', title: 'Open Source LLMs — Llama 3, Mistral & Self-Hosting', type: 'Upcoming', note: 'RSVP opening soon' },
+        ].map((e, i) => (
+          <div class={`event-mini reveal`} style={`transition-delay:${(i+1)*0.1}s`}>
+            <div class="event-mini-date">
+              <span>{e.month}</span>
+              <strong>{e.day}</strong>
+            </div>
+            <div class="event-mini-info">
+              <h4>{e.title}</h4>
+              <div class="event-mini-meta">
+                <span class={`event-type event-type--${e.type.toLowerCase()}`}>{e.type}</span>
+                <span>{e.note}</span>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     COMMUNITY
+════════════════════════════════════════════════ -->
+<section class="section section--alt" id="community">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Our Community</span>
+      <h2 class="section-title">Real people.<br />Real conversations.</h2>
+      <p class="section-subtitle">
+        We're a group of practitioners, experimenters, and learners. No hype merchants, no vendor pitches — 
+        just honest builders who care about the craft.
+      </p>
+    </div>
+
+    <div class="community-stats reveal" style="transition-delay:0.15s">
+      {[
+        { num: '200+', label: 'Members', icon: '👥' },
+        { num: '2+', label: 'Years Active', icon: '🗓️' },
+        { num: '24+', label: 'Meetups Held', icon: '🎤' },
+        { num: '15+', label: 'Speaker Talks', icon: '💡' },
+        { num: '∞', label: 'Side Projects', icon: '🚀' },
+        { num: 'GR', label: 'Grand Rapids', icon: '🌊' },
+      ].map(s => (
+        <div class="community-stat">
+          <span class="community-stat-icon">{s.icon}</span>
+          <span class="community-stat-num">{s.num}</span>
+          <span class="community-stat-label">{s.label}</span>
+        </div>
+      ))}
+    </div>
+
+    <div class="personas-grid">
+      {[
+        { emoji: '🎓', role: 'Students & Bootcamp Grads', desc: 'Breaking into tech and building their first real projects.' },
+        { emoji: '🏢', role: 'Senior Engineers', desc: 'Sharing hard-won knowledge and exploring what\'s next.' },
+        { emoji: '🔬', role: 'AI Researchers', desc: 'Turning papers into practice and theory into tools.' },
+        { emoji: '🧑‍💼', role: 'Tech Leads & CTOs', desc: 'Staying current and finding the right talent.' },
+        { emoji: '🔄', role: 'Career Switchers', desc: 'Pivoting into tech from other fields and finding their footing.' },
+        { emoji: '🛠️', role: 'Indie Makers', desc: 'Shipping side projects and hunting for collaborators.' },
+      ].map((p, i) => (
+        <div class={`persona-card reveal`} style={`transition-delay:${i*0.07}s`}>
+          <span class="persona-emoji">{p.emoji}</span>
+          <h4>{p.role}</h4>
+          <p>{p.desc}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     RESOURCES
+════════════════════════════════════════════════ -->
+<section class="section" id="resources">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Resources</span>
+      <h2 class="section-title">Stay connected &<br />keep learning.</h2>
+      <p class="section-subtitle">
+        Links to our channels, past talks, and recommended tools for group members.
+      </p>
+    </div>
+
+    <div class="resources-grid">
+      {[
+        {
+          icon: '💬',
+          title: 'Discord Server',
+          desc: 'Our main community hub. Share links, ask questions, find project collaborators, and chat between meetups.',
+          cta: 'Join Discord',
+          href: '#newsletter',
+          color: 'blue',
+        },
+        {
+          icon: '📹',
+          title: 'Past Talks',
+          desc: 'Recordings and slide decks from previous meetups. Catch up on sessions you missed or revisit the good ones.',
+          cta: 'Watch Recordings',
+          href: '#newsletter',
+          color: 'teal',
+        },
+        {
+          icon: '📰',
+          title: 'Newsletter',
+          desc: 'Monthly digest: upcoming events, curated AI & dev articles, job leads, and member project spotlights.',
+          cta: 'Subscribe',
+          href: '#newsletter',
+          color: 'amber',
+        },
+        {
+          icon: '🐙',
+          title: 'GitHub Organization',
+          desc: 'Code samples, demo repos, and open-source projects from our members and meetup sessions.',
+          cta: 'View on GitHub',
+          href: '#newsletter',
+          color: 'orange',
+        },
+        {
+          icon: '🗺️',
+          title: 'Meetup.com',
+          desc: 'RSVP for upcoming events, browse past meetups, and keep your schedule synced.',
+          cta: 'Follow on Meetup',
+          href: 'https://www.meetup.com',
+          color: 'blue',
+        },
+        {
+          icon: '🔗',
+          title: 'LinkedIn Group',
+          desc: 'Professional networking, job postings, and company news from our member community.',
+          cta: 'Connect on LinkedIn',
+          href: '#newsletter',
+          color: 'teal',
+        },
+      ].map((r, i) => (
+        <a href={r.href} class={`resource-card resource-card--${r.color} reveal`} style={`transition-delay:${i*0.07}s`} target={r.href.startsWith('http') ? '_blank' : '_self'} rel="noopener noreferrer">
+          <span class="resource-icon">{r.icon}</span>
+          <h3>{r.title}</h3>
+          <p>{r.desc}</p>
+          <span class="resource-cta">{r.cta} →</span>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     NEWSLETTER / SIGNUP
+════════════════════════════════════════════════ -->
+<section class="section newsletter-section" id="newsletter">
+  <div class="newsletter-bg" aria-hidden="true">
+    <div class="orb orb-blue" style="opacity:0.5"></div>
+    <div class="orb orb-teal" style="opacity:0.4; left:60%; top:30%"></div>
+  </div>
+  <div class="container">
+    <div class="newsletter-box reveal">
+      <div class="newsletter-text">
+        <span class="section-label">Stay In The Loop</span>
+        <h2 class="section-title" style="color:var(--text)">
+          Join River City<br /><span class="gradient-text">AI & Dev</span>
+        </h2>
+        <p>
+          Sign up to get notified about upcoming meetups, workshops, and community news. 
+          We send one digest per month — no spam, ever.
+        </p>
+        <ul class="newsletter-perks">
+          <li>✅ Monthly event announcements</li>
+          <li>✅ AI & dev digest with curated reads</li>
+          <li>✅ Member project spotlights</li>
+          <li>✅ Job board & collaboration opportunities</li>
+          <li>✅ Exclusive Discord invite</li>
+        </ul>
+      </div>
+      <div class="newsletter-form-wrap">
+        <form class="signup-form" id="signup-form" novalidate>
+          <div class="form-field">
+            <label for="signup-name">Your Name</label>
+            <input type="text" id="signup-name" name="name" placeholder="Jane Smith" autocomplete="name" required />
+          </div>
+          <div class="form-field">
+            <label for="signup-email">Email Address</label>
+            <input type="email" id="signup-email" name="email" placeholder="jane@example.com" autocomplete="email" required />
+          </div>
+          <div class="form-field">
+            <label for="signup-role">Your Primary Role <span class="optional">(optional)</span></label>
+            <select id="signup-role" name="role">
+              <option value="">Select one…</option>
+              <option>AI / ML Engineer</option>
+              <option>Web Developer</option>
+              <option>Mobile Developer</option>
+              <option>Backend / Systems Engineer</option>
+              <option>DevOps / Platform Engineer</option>
+              <option>Data Engineer / Analyst</option>
+              <option>Student / Bootcamp Grad</option>
+              <option>Tech Lead / Manager</option>
+              <option>Founder / Indie Maker</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label>Interests <span class="optional">(pick any)</span></label>
+            <div class="checkbox-grid">
+              {['AI & LLMs', 'Web Dev', 'Mobile Dev', 'Rust', '.NET / C#', 'Open Source', 'Cloud & DevOps', 'Data Engineering'].map(tag => (
+                <label class="check-label">
+                  <input type="checkbox" name="interests" value={tag} />
+                  <span>{tag}</span>
+                </label>
+              ))}
+            </div>
+          </div>
+          <button type="submit" class="btn btn-accent signup-btn">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>
+            Join the Group
+          </button>
+          <p class="form-note">Free forever · No spam · Unsubscribe anytime</p>
+        </form>
+        <div class="signup-success" id="signup-success" style="display:none">
+          <div class="success-icon">🎉</div>
+          <h3>You're in!</h3>
+          <p>Welcome to River City AI & Dev. Keep an eye on your inbox — our next event announcement is coming soon. See you at the meetup! 🌊</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="/logo.png" alt="River City AI & Dev" class="footer-logo" />
+      <p>Grand Rapids, Michigan's community for developers, AI builders, and curious technologists.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="Discord" class="social-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03z"/></svg>
+        </a>
+        <a href="#" aria-label="GitHub" class="social-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="#" aria-label="LinkedIn" class="social-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://www.meetup.com" target="_blank" rel="noopener noreferrer" aria-label="Meetup" class="social-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.24 12.574c-.32-.067-.644-.094-.967-.08a5.34 5.34 0 00-.51.059c.046-.253.073-.511.073-.775 0-2.447-2.09-4.43-4.67-4.43a4.826 4.826 0 00-3.055 1.072A3.558 3.558 0 009.255 7.9a3.59 3.59 0 00-3.592 3.592c0 .121.007.24.02.358A3.29 3.29 0 004 14.984C4 16.877 5.548 18.42 7.44 18.42h11.39c1.714 0 3.104-1.387 3.104-3.1a3.083 3.083 0 00-2.694-3.046v.3z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <a href="#about">About</a>
+        <a href="#topics">Topics</a>
+        <a href="#events">Events</a>
+        <a href="#community">Community</a>
+        <a href="#resources">Resources</a>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <a href="#">Discord</a>
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="https://www.meetup.com" target="_blank" rel="noopener noreferrer">Meetup.com</a>
+        <a href="#">YouTube</a>
+      </div>
+      <div class="footer-col">
+        <h5>Group</h5>
+        <a href="#newsletter">Join / Subscribe</a>
+        <a href="#">Speak at a Meetup</a>
+        <a href="#">Sponsor Us</a>
+        <a href="#">Code of Conduct</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© 2025 River City AI & Dev User Group · Grand Rapids, Michigan</span>
+      <span>Made with ❤️ and ☕ by the community</span>
+    </div>
+  </div>
+</footer>
+
+</Layout>
+
+
+<!-- ═══════════════════════════════════════════════
+     STYLES
+════════════════════════════════════════════════ -->
+<style>
+  /* ── NAV ────────────────────────────────────── */
+  .nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: var(--nav-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+    transition: background 0.3s;
+  }
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    height: 68px;
+  }
+  .nav-logo img { height: 40px; width: auto; }
+  .nav-links {
+    display: flex;
+    gap: 0.25rem;
+    margin-left: auto;
+  }
+  .nav-links a {
+    padding: 0.4rem 0.8rem;
+    font-family: 'Syne', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    border-radius: 6px;
+    transition: color 0.2s, background 0.2s;
+  }
+  .nav-links a:hover { color: var(--electric-blue); background: rgba(30,156,255,0.08); }
+  .nav-actions { display: flex; align-items: center; gap: 0.75rem; }
+  .nav-cta { padding: 0.55rem 1.2rem; font-size: 0.85rem; }
+  .nav-hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+  }
+  .nav-hamburger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--text);
+    border-radius: 2px;
+    transition: 0.2s;
+  }
+  .nav-mobile {
+    display: none;
+    flex-direction: column;
+    padding: 1rem 1.5rem 1.25rem;
+    border-top: 1px solid var(--border);
+    gap: 0.25rem;
+  }
+  .nav-mobile a {
+    padding: 0.5rem 0;
+    font-family: 'Syne', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-mobile a:last-child { border-bottom: none; }
+
+  @media (max-width: 820px) {
+    .nav-links, .nav-cta { display: none; }
+    .nav-hamburger { display: flex; }
+    .nav-mobile.open { display: flex; }
+    .nav-actions { margin-left: auto; }
+  }
+
+  /* ── HERO ───────────────────────────────────── */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 8rem 0 5rem;
+    overflow: hidden;
+  }
+
+  .hero-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(var(--border) 1px, transparent 1px),
+      linear-gradient(90deg, var(--border) 1px, transparent 1px);
+    background-size: 52px 52px;
+    mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, black 40%, transparent 100%);
+  }
+
+  .orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    pointer-events: none;
+  }
+  .orb-blue {
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(30,156,255,0.22) 0%, transparent 70%);
+    top: -100px; left: -200px;
+    animation: drift 14s ease-in-out infinite alternate;
+  }
+  .orb-teal {
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(13,148,136,0.18) 0%, transparent 70%);
+    bottom: -50px; right: -100px;
+    animation: drift 18s ease-in-out infinite alternate-reverse;
+  }
+  .orb-amber {
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, rgba(245,158,11,0.16) 0%, transparent 70%);
+    top: 30%; right: 15%;
+    animation: drift 22s ease-in-out infinite alternate;
+  }
+
+  @keyframes drift {
+    from { transform: translate(0, 0) scale(1); }
+    to   { transform: translate(40px, 30px) scale(1.08); }
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 1rem;
+    border-radius: 100px;
+    border: 1px solid rgba(13,148,136,0.35);
+    background: rgba(13,148,136,0.08);
+    font-family: 'Syne', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--deep-teal);
+    margin-bottom: 1.5rem;
+  }
+  .badge-dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--deep-teal);
+    box-shadow: 0 0 8px var(--deep-teal);
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50%       { opacity: 0.6; transform: scale(0.8); }
+  }
+
+  .hero-logo { margin-bottom: 1.5rem; }
+  .hero-logo img {
+    height: 90px;
+    width: auto;
+    filter: drop-shadow(0 8px 24px rgba(30,156,255,0.25));
+    transition: transform 0.4s ease;
+  }
+  .hero-logo img:hover { transform: scale(1.04); }
+
+  .hero-title {
+    font-size: clamp(2.4rem, 6vw, 4.5rem);
+    font-weight: 800;
+    margin-bottom: 1.25rem;
+    max-width: 800px;
+  }
+  .gradient-text {
+    background: linear-gradient(135deg, var(--electric-blue), var(--deep-teal));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .accent-text { color: var(--amber); }
+
+  .hero-sub {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: var(--text-muted);
+    max-width: 620px;
+    margin-bottom: 2rem;
+    line-height: 1.75;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 0.875rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+
+  .hero-stats {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.25rem 2.5rem;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    backdrop-filter: blur(8px);
+  }
+  .stat { display: flex; flex-direction: column; align-items: center; gap: 0.1rem; }
+  .stat-num {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--electric-blue);
+    line-height: 1;
+  }
+  .stat-plus { font-size: 1rem; }
+  .stat-label { font-size: 0.75rem; color: var(--text-faint); text-transform: uppercase; letter-spacing: 0.08em; }
+  .stat-divider { width: 1px; height: 36px; background: var(--border); }
+
+  .hero-scroll-hint {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    opacity: 0.6;
+  }
+  .scroll-line {
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(to bottom, var(--electric-blue), transparent);
+    animation: scroll-drop 1.8s ease-in-out infinite;
+  }
+  @keyframes scroll-drop {
+    0%   { transform: scaleY(0); transform-origin: top; }
+    50%  { transform: scaleY(1); transform-origin: top; }
+    51%  { transform: scaleY(1); transform-origin: bottom; }
+    100% { transform: scaleY(0); transform-origin: bottom; }
+  }
+
+  /* ── SECTIONS ───────────────────────────────── */
+  .section { padding: 6rem 0; }
+  .section--alt { background: var(--bg2); }
+  .section-header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.5rem;
+  }
+
+  /* ── ABOUT ──────────────────────────────────── */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+  .about-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+  }
+  .about-list li {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  .about-icon { font-size: 1.4rem; flex-shrink: 0; margin-top: 0.1rem; }
+  .about-list strong {
+    display: block;
+    font-family: 'Syne', sans-serif;
+    font-size: 0.95rem;
+    margin-bottom: 0.2rem;
+    color: var(--text);
+  }
+  .about-list p { font-size: 0.9rem; color: var(--text-muted); }
+
+  .about-card-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+  }
+  .about-card {
+    padding: 1.5rem;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    box-shadow: var(--card-shadow);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .about-card:hover { transform: translateX(6px); }
+  .about-card--1 { border-left: 3px solid var(--electric-blue); }
+  .about-card--2 { border-left: 3px solid var(--deep-teal); margin-left: 1.5rem; }
+  .about-card--3 { border-left: 3px solid var(--amber); }
+  .about-card-icon { font-size: 1.6rem; margin-bottom: 0.5rem; }
+  .about-card h4 { font-family: 'Syne', sans-serif; font-size: 1rem; margin-bottom: 0.4rem; }
+  .about-card p { font-size: 0.875rem; color: var(--text-muted); }
+
+  /* ── TOPICS ─────────────────────────────────── */
+  .topics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+  .topic-card {
+    padding: 1.5rem;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    box-shadow: var(--card-shadow);
+    transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+    cursor: default;
+  }
+  .topic-card:hover { transform: translateY(-4px); }
+  .topic-card--blue:hover  { border-color: var(--electric-blue); box-shadow: 0 8px 32px rgba(30,156,255,0.15); }
+  .topic-card--teal:hover  { border-color: var(--deep-teal);     box-shadow: 0 8px 32px rgba(13,148,136,0.15); }
+  .topic-card--amber:hover { border-color: var(--amber);         box-shadow: 0 8px 32px rgba(245,158,11,0.15); }
+  .topic-card--orange:hover{ border-color: var(--neon-orange);   box-shadow: 0 8px 32px rgba(251,146,60,0.15); }
+  .topic-icon { font-size: 1.8rem; display: block; margin-bottom: 0.75rem; }
+  .topic-card h3 { font-family: 'Syne', sans-serif; font-size: 1rem; margin-bottom: 0.5rem; }
+  .topic-card p  { font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; }
+
+  /* ── EVENTS ─────────────────────────────────── */
+  .events-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+  }
+  .events-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  .event-card--featured {
+    padding: 2rem;
+    border-radius: 18px;
+    border: 1px solid rgba(30,156,255,0.3);
+    background: var(--surface);
+    box-shadow: var(--glow-blue), var(--card-shadow);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  .event-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 100px;
+    background: linear-gradient(135deg, var(--electric-blue), var(--electric-blue-dim));
+    color: #fff;
+    font-family: 'Syne', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    width: fit-content;
+  }
+  .event-date {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .event-month {
+    font-family: 'Syne', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: var(--electric-blue);
+    text-transform: uppercase;
+  }
+  .event-day {
+    font-family: 'Syne', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1;
+    color: var(--text);
+  }
+  .event-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: var(--text);
+  }
+  .event-info p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.65; }
+  .event-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  .event-side { display: flex; flex-direction: column; gap: 1rem; }
+  .event-mini {
+    padding: 1.25rem;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .event-mini:hover { border-color: var(--deep-teal); transform: translateX(4px); }
+  .event-mini-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 44px;
+    padding: 0.5rem;
+    border-radius: 8px;
+    background: var(--bg2);
+  }
+  .event-mini-date span { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--deep-teal); }
+  .event-mini-date strong { font-family: 'Syne', sans-serif; font-size: 1.4rem; font-weight: 800; line-height: 1; color: var(--text); }
+  .event-mini-info h4 { font-family: 'Syne', sans-serif; font-size: 0.9rem; margin-bottom: 0.35rem; }
+  .event-mini-meta { display: flex; gap: 0.5rem; align-items: center; font-size: 0.8rem; color: var(--text-faint); flex-wrap: wrap; }
+  .event-type {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    font-family: 'Syne', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .event-type--past     { background: rgba(13,148,136,0.12); color: var(--deep-teal); }
+  .event-type--upcoming { background: rgba(30,156,255,0.12); color: var(--electric-blue); }
+
+  /* ── COMMUNITY ──────────────────────────────── */
+  .community-stats {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+    margin-bottom: 3.5rem;
+    padding: 2rem;
+    border-radius: 18px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    box-shadow: var(--card-shadow);
+  }
+  .community-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    text-align: center;
+  }
+  .community-stat-icon { font-size: 1.5rem; }
+  .community-stat-num {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--electric-blue);
+    line-height: 1;
+  }
+  .community-stat-label { font-size: 0.72rem; color: var(--text-faint); text-transform: uppercase; letter-spacing: 0.08em; }
+
+  .personas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+  .persona-card {
+    padding: 1.5rem;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    transition: transform 0.25s, border-color 0.25s;
+  }
+  .persona-card:hover { transform: translateY(-4px); border-color: var(--amber); }
+  .persona-emoji { font-size: 2rem; display: block; margin-bottom: 0.75rem; }
+  .persona-card h4 { font-family: 'Syne', sans-serif; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .persona-card p  { font-size: 0.85rem; color: var(--text-muted); }
+
+  /* ── RESOURCES ──────────────────────────────── */
+  .resources-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+  .resource-card {
+    padding: 1.75rem;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
+    text-decoration: none;
+  }
+  .resource-card:hover { transform: translateY(-4px); }
+  .resource-card--blue:hover  { border-color: var(--electric-blue); box-shadow: 0 8px 32px rgba(30,156,255,0.12); }
+  .resource-card--teal:hover  { border-color: var(--deep-teal);     box-shadow: 0 8px 32px rgba(13,148,136,0.12); }
+  .resource-card--amber:hover { border-color: var(--amber);         box-shadow: 0 8px 32px rgba(245,158,11,0.12); }
+  .resource-card--orange:hover{ border-color: var(--neon-orange);   box-shadow: 0 8px 32px rgba(251,146,60,0.12); }
+  .resource-icon { font-size: 1.8rem; }
+  .resource-card h3 { font-family: 'Syne', sans-serif; font-size: 1rem; color: var(--text); }
+  .resource-card p  { font-size: 0.875rem; color: var(--text-muted); line-height: 1.6; flex: 1; }
+  .resource-cta {
+    font-family: 'Syne', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--electric-blue);
+    margin-top: 0.5rem;
+  }
+  .resource-card--teal  .resource-cta { color: var(--deep-teal); }
+  .resource-card--amber .resource-cta { color: var(--amber); }
+  .resource-card--orange .resource-cta { color: var(--neon-orange); }
+
+  /* ── NEWSLETTER ─────────────────────────────── */
+  .newsletter-section {
+    position: relative;
+    padding: 6rem 0;
+    overflow: hidden;
+  }
+  .newsletter-bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+  .newsletter-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+    padding: 3.5rem;
+    border-radius: 24px;
+    border: 1px solid rgba(30,156,255,0.2);
+    background: var(--surface);
+    box-shadow: var(--glow-blue), var(--card-shadow);
+    position: relative;
+    z-index: 1;
+  }
+  .newsletter-text .section-title { margin-bottom: 0.75rem; }
+  .newsletter-text p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+  }
+  .newsletter-perks {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .newsletter-perks li {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .signup-form { display: flex; flex-direction: column; gap: 1.1rem; }
+  .form-field { display: flex; flex-direction: column; gap: 0.4rem; }
+  .form-field label {
+    font-family: 'Syne', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: 0.04em;
+  }
+  .optional { font-weight: 400; color: var(--text-faint); }
+  .form-field input,
+  .form-field select {
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    border: 1.5px solid var(--border);
+    background: var(--bg2);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+    appearance: none;
+  }
+  .form-field input:focus,
+  .form-field select:focus {
+    border-color: var(--electric-blue);
+    box-shadow: 0 0 0 3px rgba(30,156,255,0.15);
+  }
+  .checkbox-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+  .check-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .check-label:hover { border-color: var(--electric-blue); color: var(--electric-blue); }
+  .check-label input { accent-color: var(--electric-blue); width: 14px; height: 14px; }
+  .signup-btn { width: 100%; justify-content: center; padding: 0.9rem; font-size: 1rem; }
+  .form-note { text-align: center; font-size: 0.78rem; color: var(--text-faint); }
+
+  .signup-success {
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .success-icon { font-size: 3rem; }
+  .signup-success h3 { font-family: 'Syne', sans-serif; font-size: 1.5rem; }
+  .signup-success p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; }
+
+  /* ── FOOTER ─────────────────────────────────── */
+  .footer {
+    background: var(--bg2);
+    border-top: 1px solid var(--border);
+    padding-top: 4rem;
+  }
+  .footer-inner {
+    display: grid;
+    grid-template-columns: 1.6fr 2fr;
+    gap: 4rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .footer-brand p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin: 1rem 0 1.5rem;
+    max-width: 280px;
+    line-height: 1.7;
+  }
+  .footer-logo { height: 50px; width: auto; margin-bottom: 0.25rem; }
+  .footer-socials { display: flex; gap: 0.625rem; }
+  .social-btn {
+    width: 36px; height: 36px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    transition: color 0.2s, border-color 0.2s, background 0.2s;
+  }
+  .social-btn:hover {
+    color: var(--electric-blue);
+    border-color: var(--electric-blue);
+    background: rgba(30,156,255,0.08);
+  }
+
+  .footer-links { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+  .footer-col { display: flex; flex-direction: column; gap: 0.6rem; }
+  .footer-col h5 {
+    font-family: 'Syne', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text);
+    margin-bottom: 0.25rem;
+  }
+  .footer-col a { font-size: 0.875rem; color: var(--text-muted); transition: color 0.2s; }
+  .footer-col a:hover { color: var(--electric-blue); }
+
+  .footer-bottom {
+    padding: 1.25rem 0;
+  }
+  .footer-bottom .container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: var(--text-faint);
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  /* ── RESPONSIVE ─────────────────────────────── */
+  @media (max-width: 1024px) {
+    .topics-grid, .resources-grid { grid-template-columns: repeat(2, 1fr); }
+    .personas-grid { grid-template-columns: repeat(2, 1fr); }
+    .community-stats { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  @media (max-width: 768px) {
+    .about-grid, .events-grid, .newsletter-box { grid-template-columns: 1fr; gap: 2rem; }
+    .about-visual { order: -1; }
+    .topics-grid, .resources-grid, .personas-grid { grid-template-columns: 1fr; }
+    .community-stats { grid-template-columns: repeat(2, 1fr); }
+    .footer-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+    .footer-links { grid-template-columns: repeat(2, 1fr); }
+    .hero-stats { flex-wrap: wrap; justify-content: center; gap: 1rem; }
+    .newsletter-box { padding: 2rem; }
+    .checkbox-grid { grid-template-columns: 1fr; }
+    .events-header { flex-direction: column; }
+  }
+
+  @media (max-width: 480px) {
+    .section { padding: 4rem 0; }
+    .footer-links { grid-template-columns: 1fr; }
+    .hero-actions { flex-direction: column; align-items: stretch; }
+    .hero-actions .btn { justify-content: center; }
+  }
+</style>
+
+
+<script>
+  // Hamburger menu
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  hamburger?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('open');
+  });
+  // Close mobile menu on link click
+  mobileMenu?.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => mobileMenu.classList.remove('open'));
+  });
+
+  // Smooth scroll for nav links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  // Newsletter form
+  const form = document.getElementById('signup-form');
+  const successEl = document.getElementById('signup-success');
+  form?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (form) form.style.display = 'none';
+    if (successEl) successEl.style.display = 'flex';
+  });
+</script>
