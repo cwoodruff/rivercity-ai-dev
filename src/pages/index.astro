@@ -1137,7 +1137,7 @@ import Layout from '../layouts/Layout.astro';
     letter-spacing: 0.04em;
   }
   .optional { font-weight: 400; color: var(--text-faint); }
-  .form-field input,
+  .form-field input:not([type="checkbox"]),
   .form-field select {
     padding: 0.7rem 1rem;
     border-radius: 8px;
@@ -1150,7 +1150,7 @@ import Layout from '../layouts/Layout.astro';
     outline: none;
     appearance: none;
   }
-  .form-field input:focus,
+  .form-field input:not([type="checkbox"]):focus,
   .form-field select:focus {
     border-color: var(--electric-blue);
     box-shadow: 0 0 0 3px rgba(30,156,255,0.15);
