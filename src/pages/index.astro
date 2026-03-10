@@ -434,6 +434,11 @@ import Layout from '../layouts/Layout.astro';
       </div>
       <div class="newsletter-form-wrap">
         <form class="signup-form" id="signup-form" novalidate>
+          <!-- Web3Forms -->
+          <input type="hidden" name="access_key" value="a131caeb-0090-4b58-9a47-ae41f4d4420a" />
+          <input type="hidden" name="subject" value="New River City AI & Dev Signup" />
+          <input type="hidden" name="from_name" value="River City AI & Dev Group" />
+          <input type="checkbox" name="botcheck" style="display:none" />
           <div class="form-field">
             <label for="signup-name">Your Name</label>
             <input type="text" id="signup-name" name="name" placeholder="Jane Smith" autocomplete="name" required />
@@ -1306,12 +1311,45 @@ import Layout from '../layouts/Layout.astro';
     });
   });
 
-  // Newsletter form
+  // Newsletter form — Web3Forms
   const form = document.getElementById('signup-form');
   const successEl = document.getElementById('signup-success');
-  form?.addEventListener('submit', (e) => {
+  const submitBtn = form?.querySelector('.signup-btn');
+
+  form?.addEventListener('submit', async (e) => {
     e.preventDefault();
-    if (form) form.style.display = 'none';
-    if (successEl) successEl.style.display = 'flex';
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
+    }
+
+    const data = new FormData(form);
+    // Append checked interests as a comma-separated string
+    const interests = [...form.querySelectorAll('input[name="interests"]:checked')]
+      .map(el => el.value).join(', ');
+    data.delete('interests');
+    if (interests) data.append('interests', interests);
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: data,
+      });
+      const json = await res.json();
+
+      if (json.success) {
+        if (form) form.style.display = 'none';
+        if (successEl) successEl.style.display = 'flex';
+      } else {
+        throw new Error(json.message || 'Submission failed');
+      }
+    } catch (err) {
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Join the Group';
+      }
+      alert('Something went wrong. Please try again or email us directly.');
+      console.error(err);
+    }
   });
 </script>
