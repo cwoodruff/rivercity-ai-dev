@@ -345,14 +345,6 @@ import Layout from '../layouts/Layout.astro';
     <div class="resources-grid">
       {[
         {
-          icon: '💬',
-          title: 'Discord Server',
-          desc: 'Our main community hub. Share links, ask questions, find project collaborators, and chat between meetups.',
-          cta: 'Join Discord',
-          href: '#newsletter',
-          color: 'blue',
-        },
-        {
           icon: '📹',
           title: 'Past Talks',
           desc: 'Recordings and slide decks from previous meetups. Catch up on sessions you missed or revisit the good ones.',
@@ -373,7 +365,7 @@ import Layout from '../layouts/Layout.astro';
           title: 'GitHub Organization',
           desc: 'Code samples, demo repos, and open-source projects from our members and meetup sessions.',
           cta: 'View on GitHub',
-          href: '#newsletter',
+          href: 'https://github.com/cwoodruff/rivercity-ai-dev',
           color: 'orange',
         },
         {
@@ -383,14 +375,6 @@ import Layout from '../layouts/Layout.astro';
           cta: 'Follow on Meetup',
           href: 'https://www.meetup.com/river-city-ai-dev-group/',
           color: 'blue',
-        },
-        {
-          icon: '🔗',
-          title: 'LinkedIn Group',
-          desc: 'Professional networking, job postings, and company news from our member community.',
-          cta: 'Connect on LinkedIn',
-          href: '#newsletter',
-          color: 'teal',
         },
       ].map((r, i) => (
         <a href={r.href} class={`resource-card resource-card--${r.color} reveal`} style={`transition-delay:${i*0.07}s`} target={r.href.startsWith('http') ? '_blank' : '_self'} rel="noopener noreferrer">
