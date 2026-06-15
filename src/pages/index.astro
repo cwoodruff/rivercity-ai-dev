@@ -236,8 +236,8 @@ import Layout from '../layouts/Layout.astro';
       <div class="event-card event-card--featured reveal">
         <div class="event-badge">Next Up</div>
         <div class="event-date">
-          <span class="event-month">MAY</span>
-          <span class="event-day">20</span>
+          <span class="event-month">JUNE</span>
+          <span class="event-day">17</span>
         </div>
         <div class="event-info">
           <h3>Agent Orchestration & Cybernetics</h3>
@@ -248,13 +248,13 @@ import Layout from '../layouts/Layout.astro';
             <li>🎙️ 6:40 PM — Opening Discussions
                 <span class="desc">We'll cover what's new and have people ask questions.</span>
             </li>
-            <li>🤖 7:00 PM — Speaker: Kris Coleman Talk: Stop Driving. Start Orchestrating - A Field Report from Gastown
-                <span class="desc"></span>
-            </li>
-            <li>💬 7:45 PM — Open Discussion
-                <span class="desc">What do YOU want to learn about? We'll capture topic ideas from the group to shape future meetings.</span>
-            </li>
-            <li>📸 8:15 PM — Wrap + Group Photo</li>
+            <!--<li>🤖 7:00 PM — Speaker: Kris Coleman Talk: Stop Driving. Start Orchestrating - A Field Report from Gastown-->
+            <!--    <span class="desc"></span>-->
+            <!--</li>-->
+            <!--<li>💬 7:45 PM — Open Discussion-->
+            <!--    <span class="desc">What do YOU want to learn about? We'll capture topic ideas from the group to shape future meetings.</span>-->
+            <!--</li>-->
+            <li>📸 8:00 PM — Wrap</li>
           </ul>
 
           <p>RSVP on Meetup and share with any developer friends who should be in the room. The more the merrier.</p>
@@ -264,16 +264,16 @@ import Layout from '../layouts/Layout.astro';
             <span>🕕 6:00 PM – 8:30 PM</span>
             <span>🆓 Free to attend</span>
           </div>
-          <a href="https://www.meetup.com/river-city-ai-dev-group/events/314799241/?slug=river-city-ai-dev-group&eventId=314799241" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="margin-top:1.25rem;">RSVP on Meetup</a>
+          <a href="https://www.meetup.com/river-city-ai-dev-group/events/315268097/?slug=river-city-ai-dev-group&eventId=315268097" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="margin-top:1.25rem;">RSVP on Meetup</a>
         </div>
       </div>
 
       <!-- Past / upcoming -->
       <div class="event-side">
         {[
-          { month: 'JUNE', day: '17', title: 'TBD', type: 'Upcoming', note: 'RSVP opening soon' },
           { month: 'JULY', day: '15', title: 'TBD', type: 'Upcoming', note: 'RSVP opening soon' },
-          { month: 'AUG', day: '20', title: 'TBD', type: 'Upcoming', note: 'RSVP opening soon' }
+          { month: 'AUG', day: '20', title: 'TBD', type: 'Upcoming', note: 'RSVP opening soon' },
+          { month: 'SEPT', day: '16', title: 'TBD', type: 'Upcoming', note: 'RSVP opening soon' }
         ].map((e, i) => (
           <div class={`event-mini reveal`} style={`transition-delay:${(i+1)*0.1}s`}>
             <div class="event-mini-date">
